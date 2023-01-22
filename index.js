@@ -24,7 +24,6 @@ fetch("https://rickandmortyapi.com/api/character")
     .then((respuesta) => respuesta.json())
     .then((data) => {
         const array = data.results
-        console.log(array)
         personajesHtml(data.results)
     })
     .catch((error) => console.log("Algo salió mal"))
