@@ -71,7 +71,7 @@ swal({
     })
     .catch(err => {
         if (err) {
-            swal("Oh no!", "Personaje no encontrado");
+            swal("Rayos!", "Personaje no encontrado");
         } else {
             swal.stopLoading();
             swal.close();
